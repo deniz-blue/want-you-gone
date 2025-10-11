@@ -143,7 +143,7 @@ window.int4 = setInterval(() => ccursorShown = !ccursorShown, blinkDelay);
 
 
 const loadCreditsTimings = async () => {
-  let res = await fetch("/credits.txt");
+  let res = await fetch("credits.txt");
   let credits = (await res.text()).split("\n");
   
   let _timings = [];
